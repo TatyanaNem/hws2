@@ -19,26 +19,17 @@
 .friendText {
     display: flex;
     flex-direction: column;
-    position: relative;
+    min-width: 150px;
+    max-width: 50%;
     padding: 8px 13px;
-    margin-left: 10px;
     border-radius: 4px 4px 4px 0;
     background-color: #F5F7FB;
-    box-shadow: 0 5px 20px rgba(29, 33, 38, 0.03), 0 1px 2px rgba(29, 33, 38, 0.1);
 }
 
-.friendText:after {
-    content: "";
-    z-index: -2;
-    position: absolute;
-    bottom: 0;
-    left: -10px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 0 10px 10px;
-    border-color: transparent transparent #f5f7fb transparent;
-    box-shadow: 2px 1px 2px #f5f7fb;
+.angle {
+    width: 15px;
+    height: 15px;
+    background: radial-gradient(circle at top left, rgba(0, 0, 0, 0) 15px, rgba(245,247,251,1) 0);
 }
 
 .friendName {
@@ -50,6 +41,8 @@
 }
 
 .friendMessageText {
+    word-break: break-word;
+    white-space: break-spaces;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 16px;

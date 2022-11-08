@@ -20,13 +20,12 @@ const Stand = () => {
                         value={stateForAllInputs}
                         error={error}
                         onChangeText={setValue}
-                        onChange={(e) => setValue(e.currentTarget.value)}
+                        onChange={(e) => {
+                            setError('')
+                            setValue(e.currentTarget.value)
+                        }}
                         onEnter={() => {
-                            setError(
-                                stateForAllInputs.trim()
-                                    ? ''
-                                    : 'Error'
-                            )
+                            stateForAllInputs.trim() === '' ? setError(stateForAllInputs.trim() ? '' : 'Error') : setError('')
                             setValue('')
                         }}
                     />

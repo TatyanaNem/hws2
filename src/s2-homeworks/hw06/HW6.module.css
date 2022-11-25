@@ -1,5 +1,24 @@
-.buttonsContainer {
+.buttonsContainer button {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    margin-right: 24px;
+}
+
+.buttonsContainer button:hover {
+    opacity: 0.8;
+}
+
+.buttonsContainer button:nth-child(2) {
+    background-color: #fff;
+    color: #0066CC;
 }
 
 .editableSpanContainer {
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+
+.editableSpanContainer:hover {
+    opacity: 0.8;
 }

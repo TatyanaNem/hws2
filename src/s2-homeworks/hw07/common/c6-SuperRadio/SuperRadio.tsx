@@ -2,8 +2,7 @@ import React, {
     ChangeEvent,
     InputHTMLAttributes,
     DetailedHTMLProps,
-    HTMLAttributes, useState,
-    MouseEvent
+    HTMLAttributes
 } from 'react'
 import s from './SuperRadio.module.css'
 
@@ -46,7 +45,7 @@ const SuperRadio: React.FC<SuperRadioPropsType> = ({
                       id={id + '-input-' + o.id}
                       className={finalRadioClassName}
                       type={'radio'}
-                      name={o.id}
+                      name={name}
                       checked={value === o.id}
                       value={o.id}
                       // name, checked, value делают студенты

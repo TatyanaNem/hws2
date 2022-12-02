@@ -34,17 +34,6 @@
     display: block;
 }
 
-
-/*.radio:checked::before {*/
-/*    content: '';*/
-/*    position: absolute;*/
-/*    background-color: red;*/
-/*    border-radius: 50%;*/
-/*    top: 50%;*/
-/*    left: 50%;*/
-/*    transform: translate(-50%, -50%);*/
-/*}*/
-
 .label {
     min-width: 115px;
     min-height: 20px;
@@ -53,6 +42,10 @@
     font-size: 16px;
     line-height: 20px;
     color: #000000;
+}
+
+.label:hover {
+    opacity: 0.7;
 }
 
 .span {

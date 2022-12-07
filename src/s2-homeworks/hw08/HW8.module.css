@@ -1,23 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
 .item {
+    width: 50%;
+    height: 47px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.item td:last-child {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
 }
 
 .item:last-of-type {
+    border-bottom: none;
 }
 
 .users {
+    border-collapse: collapse;
 }
 
 .buttonsContainer {
+    display: flex;
+    align-self: flex-end;
+    width: 340px;
+    justify-content: space-between;
+    margin-bottom: 18px;
 }
 
 .container {
+    display: flex;
+    width: 606px;
+    flex-direction: column;
 }
 
 .thead {
+    height: 36px;
+    background: #E5E5E5;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 .nameCol {
+    width: 50%;
+    padding: 10px 17px;
 }
 
 .ageCol {
+    padding: 10px 17px 10px 0;
 }

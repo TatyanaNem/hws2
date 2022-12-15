@@ -1,6 +1,7 @@
 import React from 'react'
 import Clock from './Clock'
 import s2 from '../../s1-main/App.module.css'
+import AlternativeClock from './AlternativeClock';
 
 /*
 * 1 - в файле Clock.tsx дописать функции stop, start, onMouseEnter, onMouseLeave
@@ -15,7 +16,10 @@ const HW9 = () => {
             <div className={s2.hwTitle}>Homework #9</div>
 
             <div className={s2.hw}>
-                <Clock />
+                <div style={{display: 'flex', width: '500px', justifyContent: 'space-between'}}>
+                    <Clock />
+                    <AlternativeClock />
+                </div>
             </div>
         </div>
     )

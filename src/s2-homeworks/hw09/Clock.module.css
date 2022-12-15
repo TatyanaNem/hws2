@@ -49,3 +49,12 @@
     line-height: 20px;
     opacity: 0.5;
 }
+
+.dateInput {
+    display: block;
+    margin-top: 10px;
+}
+
+.dateInputRed {
+    background-color: indianred;
+}

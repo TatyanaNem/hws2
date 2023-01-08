@@ -19,5 +19,17 @@ html {
 }
 
 .select {
+    display: flex;
+    margin-top: 6px;
+    width: 171px;
+    height: 36px;
+    font-size: 14px;
+    border: 1px solid #C2C2C2;
+    border-radius: 2px;
+    background-color: var(--background);
+    color: var(--color);
+}
 
+.select option {
+    color: var(--color);
 }

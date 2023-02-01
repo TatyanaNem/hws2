@@ -1,0 +1,18 @@
+<svg width="8" height="11.999999999999998" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_1">
+   <path id="svg_2" d="m400,297.46182l3.4641,4.5l-6.9282,0l3.4641,-4.5z" fill="#ADABAC"/>
+  </g>
+  <g id="svg_3">
+   <path id="svg_4" d="m400,307.75846l-3.4641,-4.5l6.9282,0l-3.4641,4.5z" fill="#ADABAC"/>
+  </g>
+  <g>
+   <path fill="#ADABAC" d="m4,-0.15836l3.4641,4.5l-6.9282,0l3.4641,-4.5z"/>
+  </g>
+  <g>
+   <path fill="#ADABAC" d="m4,11.75404l-3.4641,-4.5l6.9282,0l-3.4641,4.5z"/>
+  </g>
+ </g>
+
+</svg>

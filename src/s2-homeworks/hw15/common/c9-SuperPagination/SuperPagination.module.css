@@ -1,11 +1,27 @@
 .pagination {
     display: flex;
+    align-items: center;
+    margin-bottom: 36px;
+}
+
+.pagination nav {
+    min-width: 340px;
 }
 
 .text1 {
-
+    margin-right: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #0D0B0C;
 }
 
 .text2 {
-
+    margin-left: 6px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #0D0B0C;
 }

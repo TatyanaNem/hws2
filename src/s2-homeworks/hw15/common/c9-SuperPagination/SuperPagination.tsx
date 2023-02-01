@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {ChangeEvent, ChangeEventHandler} from 'react'
 import SuperSelect from '../../../hw07/common/c5-SuperSelect/SuperSelect'
 import {Pagination} from '@mui/material'
 import s from './SuperPagination.module.css'
@@ -16,14 +16,17 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = (
         page, itemsCountForPage, totalCount, onChange, id = 'hw15',
     }
 ) => {
-    const lastPage = 10 // пишет студент // вычислить количество страниц
+    const lastPage = Math.ceil(totalCount / itemsCountForPage) // пишет студент // вычислить количество страниц
 
     const onChangeCallback = (event: any, page: number) => {
         // пишет студент
+        onChange(page, itemsCountForPage)
     }
 
-    const onChangeSelect = (event: any) => {
+    const onChangeSelect = (event: string) => {
         // пишет студент
+        console.log(event)
+            onChange(page, +event)
     }
 
     return (
@@ -31,6 +34,18 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = (
             <Pagination
                 id={id + '-pagination'}
                 sx={{
+                    '& .Mui-selected': {
+                        backgroundColor: '#0066cc',
+                        borderRadius: 2,
+                        '& :hover': {
+                            backgroundColor: '#0066cc'
+                        }
+                    },
+                    '& .MuiPaginationItem-root': {
+                        borderRadius: 2
+                    },
+                    minHeight: 24,
+                    marginRight: 5,
                     // стили для Pagination // пишет студент
                 }}
                 page={page}
@@ -41,22 +56,23 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = (
             />
 
             <span className={s.text1}>
-                показать
+                Показать
             </span>
 
             <SuperSelect
                 id={id + '-pagination-select'}
+                className={s.superSelect}
                 value={itemsCountForPage}
                 options={[
                     {id: 4, value: 4},
                     {id: 7, value: 7},
                     {id: 10, value: 10},
                 ]}
-                onChange={onChangeSelect}
+                onChangeOption={onChangeSelect}
             />
 
             <span className={s.text2}>
-                строк в таблице
+                {itemsCountForPage === 4 ? 'строки': 'строк'} в таблице
             </span>
         </div>
     )
